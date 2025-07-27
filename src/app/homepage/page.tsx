@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from 'next/image';
 
 const HomePage: React.FC = () => {
   const carouselData = [
@@ -54,10 +55,12 @@ const HomePage: React.FC = () => {
                 <div className="relative h-full w-full">
                   {/* Background Image */}
                   <div className="absolute inset-0 opacity-60">
-                    <img 
+                    <Image 
                       src={slide.src}
                       alt={slide.alt}
                       className="w-full h-full object-cover"
+                      width={2070}
+                      height={1380}
                     />
                   </div>
                   
@@ -110,10 +113,12 @@ const HomePage: React.FC = () => {
           {/* Left Side - Construction Image */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                 alt="Construction Site" 
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
+                width={2070}
+                height={1380}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
             </div>
@@ -166,40 +171,48 @@ const HomePage: React.FC = () => {
             {/* Top Row - 4 Images */}
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
                   alt="Client 1" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={774}
+                  height={193}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Client 2" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={2126}
+                  height={1417}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Client 3" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={2126}
+                  height={1417}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Client 4" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={2126}
+                  height={1417}
                 />
               </div>
             </div>
@@ -209,40 +222,48 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
                   alt="Client 5" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={774}
+                  height={193}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Client 6" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={2126}
+                  height={1417}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Client 7" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={2126}
+                  height={1417}
                 />
               </div>
             </div>
 
             <div className="group relative">
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 shadow-lg transform transition-all duration-300 hover:scale-110 hover:-rotate-3 hover:shadow-2xl">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
                   alt="Client 8" 
                   className="w-full h-12 sm:h-16 lg:h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  width={774}
+                  height={193}
                 />
               </div>
             </div>
